@@ -9,6 +9,20 @@
 // This CSS relates to homepage.html.
 */
 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -87,6 +101,95 @@ body {
 
 .tabcontent {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.divider {
+  width: 100%;
+  height:1px;
+  position: relative;
+  background-color: #fa83345c;
+}
+.divider-text{
+  position: absolute;
+  background-color: #FFF;
+  padding: 0 20px;
+  color:#303133;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.div1 {
+  margin-left: calc(5vw);
+  width: calc(50vw);
+  height: calc(50vh);
+  border: 2px solid rgb(12, 12, 15);
+}
+
+.div2 {
+  margin-right: 10px;
+}
+
+.div3 {
+  margin-left: calc(5vw);
+  width: 2000px;
+  height: 1000px;
+  border: 2px solid rgb(12, 12, 15);
+}
+
+.footer {
+  height: 415px;
+  background-color: #666;
+}
+
+.footer .w {
+  /* 注意：此处对 footer 里的 w 设置 margin 会发生外边距塌陷， 
+  因为，w 包含在 footer 中，w 的上外边距为 35px，footer 的外边距为 0px， 
+  此时发生外边距塌陷，父元素塌陷较大的外边距值 35px
+  /* margin-top: 35px; */
+  padding-top: 35px;
+  /* padding 不会发生边距合并 */
+}
+
+.copyright {
+  float: left;
+}
+
+.copyright p {
+  font-size: 20px;
+  color: #fff;
+  margin: 20px 0 15px 0;
+}
+
+.copyright .app {
+  display: block;
+  width: 118px;
+  height: 33px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 33px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.links {
+  float: right;
+  margin-right: calc(40vw);
+}
+
+.links dl {
+  float: left;
+  margin-left: 100px;
+}
+
+.links dl dt {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.links dl dd a {
+  color: #fff;
+  font-size: 20px;
 }
 
 /* Go from zero to full opacity */
