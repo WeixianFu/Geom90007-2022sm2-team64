@@ -1,0 +1,96 @@
+/* 
+// GEOM90007_2021 - Information Visualisation
+// Assignment 3 - Interactive Data Visualisation for the Web
+// Date: 10/10/2022
+
+// Student Names/Numbers: 
+//  
+
+// This CSS relates to homepage.html.
+*/
+
+body {
+    height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+  }
+  
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    color: #6c6c6c;
+    
+  }
+  
+  h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600 !important;
+    margin-bottom: 0px !important;
+    color:#6c6c6c;
+  }
+  
+  p {
+    margin-bottom: 0 !important;
+    color: #6c6c6c;
+  }
+
+
+
+
+  /* Containers */
+.page_header_item {
+    /*flex: 1;*/
+    order: 1;  
+    background-color:#F7F6F4; /*#00457C*/
+    text-align: center;
+    padding: 15px;
+  }
+
+   /* Tab */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+ 
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 16px;
+  transition: 0.3s;
+  width: 110px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
