@@ -22,4 +22,3 @@ function openMap(event, buttonName) {
     event.currentTarget.className += " active";
 
 }
-document.getElementById("defaultOpen").click();
