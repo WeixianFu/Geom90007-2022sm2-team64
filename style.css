@@ -24,6 +24,7 @@
 }
 
 body {
+  margin: 0;
     height: 100%;
     width: 100%;
     overscroll-behavior: none;
@@ -37,7 +38,7 @@ body {
     margin-bottom: 0 !important;
     margin-left: 0;
     margin-right: 0;
-    color: #6c6c6c;
+    color: #fff;
     
   }
   
@@ -45,31 +46,36 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600 !important;
     margin-bottom: 0px !important;
-    color:#6c6c6c;
+    color:#fff;
   }
   
   p {
     margin-bottom: 0 !important;
-    color: #6c6c6c;
+    color: #fff;
   }
-
-
-
 
   /* Containers */
 .page_header_item {
     /*flex: 1;*/
     order: 1;  
-    background-color:#F7F6F4; /*#00457C*/
+    background-color:#00457C; /*#00457C*/
     text-align: center;
-    padding: 15px;
+    /* padding: 15px; */
+    height: 80px;
+   
   }
 
+.page_footer_item {
+  background-color:#00457C;
+  height: 120px;
+
+}
    /* Tab */
 
 /* Style the tab */
-.tab {
+.tab { 
   overflow: hidden;
+  padding-top: 24px;
   /* border: 1px solid #ccc; */
  
 }
@@ -113,7 +119,7 @@ body {
   position: absolute;
   background-color: #FFF;
   padding: 0 20px;
-  color:#303133;
+  color:#fff;
   left: 20px;
   transform: translateY(-50%);
 }
@@ -136,26 +142,21 @@ body {
   border: 2px solid rgb(12, 12, 15);
 }
 
-.footer {
-  background-color: #666;
-}
+
 
 .footer .w {
-  /* 注意：此处对 footer 里的 w 设置 margin 会发生外边距塌陷， 
-  因为，w 包含在 footer 中，w 的上外边距为 35px，footer 的外边距为 0px， 
-  此时发生外边距塌陷，父元素塌陷较大的外边距值 35px
   /* margin-top: 35px; */
-  padding-top: 35px;
-  /* padding 不会发生边距合并 */
+  /* padding-top: 35px; */
+ 
 }
 
 .copyright {
-  float: left;
+  float: center;
 }
 
 .copyright p {
   font-size: 20px;
-  color: #303133;
+  color: #fff;
   margin: 20px 0 15px 0;
 }
 
@@ -166,13 +167,14 @@ body {
   border: 1px solid #fff;
   text-align: center;
   line-height: 33px;
-  color: #303133;
+  color: #fff;
   font-size: 16px;
 }
 
 .links {
   float: right;
   margin-right: calc(40vw);
+  color:#fff;
 }
 
 .links dl {
@@ -182,12 +184,12 @@ body {
 
 .links dl dt {
   font-size: 22px;
-  color: #303133;
+  color: #fff;
   margin-bottom: 5px;
 }
 
 .links dl dd a {
-  color: #303133;
+  color: #fff;
   font-size: 20px;
 }
 
