@@ -7,68 +7,199 @@
     <title>Dashboard</title>
     <link href="style.css" rel="stylesheet">   
     <script src="openMap.js"></script>
+    <script src="detectZoom.js"></script>
+    <script src="concat.js"></script>
 </head>
+
 <body onload = "document.getElementById('defaultOpen').click();">
-  
 
     <div class="page_header_item">
-    <div > 
-        <img src="UniMelbLogo.png" alt="UniMelbLogo" height="60" align = "left" >
-        <img src="Melbournelogo.png" alt="UniMelbLogo" height="60" align = "right">
+        <div> 
+            <img src="UniMelbLogo.png" alt="UniMelbLogo" height="60" align = "left" >
+            <img src="Melbournelogo.png" alt="UniMelbLogo" height="60" align = "right">
+        </div>
 
-
-    </div>
-
-    <div style="display: inline-block; vertical-align: middle;">
-        <h4>Dashboard</h4>
-        <p>-----------------Public Transport Planner------------------</p>
-    </div>
+    
+        <div style="display: inline-block; vertical-align: middle;">
+            <h4>Public Transport Planner Dashboard</h4>
+            <hr>
+        </div>
 
      <!-- create tab links -->
 
-    <div class="tab">
-        <button class="tablinks" onclick="openMap(event, 'where to live')" 
-        id = "defaultOpen">
-            <img src="hotel.png" height = "40" /> Where to live</button>
+        <div class="tab">
+            <button class="tablinks" onclick="openMap(event, 'where to live')" 
+            id = "defaultOpen">
+                <img src="hotel.png" height = "40" /> Where to live</button>
           
 
-        <button class="tablinks" onclick="openMap(event, 'where to go')" >
-            <img src="map.png" height = "40" /> Where to go</button>
+            <button class="tablinks" onclick="openMap(event, 'where to go')" >
+                <img src="map.png" height = "40" /> Where to go</button>
 
-        <button class="tablinks" onclick="openMap(event, 'when to go')">
-            <img src="schedule.png" height = "40" /> When to go</button>
-      </div>
+            <button class="tablinks" onclick="openMap(event, 'when to go')">
+                <img src="schedule.png" height = "40" /> When to go</button>
+        </div>
     
     <!-- tab content -->
-   <div id = "where to live" class = "tabcontent" align = "center">
-
-    <img src="choosehotel.png"  height="600" align = "right">
-        <!-- review_3 map Radius -->
-        <div class='tableauPlaceholder' id='viz1665874648275' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;RDHC6XH6P' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1665874648275');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        
+        <div id = "where to live" class = "tabcontent" align = "center">
+                <img src="choosehotel.png"  height="600" align = "right"> 
+            <!-- review_3 map Radius -->
+                <div class='tableauPlaceholder' id='viz1665874648275' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='shared&#47;RDHC6XH6P' /> 
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1665874648275');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    if ( divElement.offsetWidth > 1000+440 ) { 
+                        vizElement.style.width='1000px';
+                        vizElement.style.height='827px';
+                        } else if ( divElement.offsetWidth > 827+440 ) {
+                            vizElement.style.width=concat(divElement.offsetWidth-440, 'px');
+                            vizElement.style.height='827px';
+                            } else { 
+                                vizElement.style.width='100%';vizElement.style.height='727px';
+                                }                     
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            
         </div>
+
 
         
         <div id = "where to go" class = "tabcontent">
 
-            <img src="googlereview.png"  height="400" align = "center">
+            <img src="googlereview.png"  width="400" align = "right">
 
-        <!-- Viz3  map spin bar chart-->
-        <div class='tableauPlaceholder' id='viz1665873031656' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Y5&#47;Y5FRM9Z46&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;Y5FRM9Z46' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Y5&#47;Y5FRM9Z46&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1665873031656');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='2000px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1080px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-       
-    </div>
+            <!-- Viz3  map spin bar chart-->
+            <div class='tableauPlaceholder' id='viz1665873031656' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Y5&#47;Y5FRM9Z46&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='path' value='shared&#47;Y5FRM9Z46' /> 
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Y5&#47;Y5FRM9Z46&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1665873031656');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 2000+440 ) { 
+                    vizElement.style.width='2000px';
+                    vizElement.style.height='1027px';
+                    } else if ( divElement.offsetWidth > 1027+440 ) { 
+                        vizElement.style.width=concat(divElement.offsetWidth-440, 'px');
+                        vizElement.style.height='1080px';
+                        } else { 
+                            vizElement.style.width='100%';vizElement.style.height='927px';
+                            }                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+        </div>
 
     
 
-    <div id = "when to go" class = "tabcontent">
- <!-- Viz3  map calendar-->
- <img src="pickschedule.png"  height="400" align = "center">
- <div class='tableauPlaceholder' id='viz1665874963467' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='viz2_16658326696350&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1665874963467');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='2300px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='2300px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div id = "when to go" class = "tabcontent">
+            <!-- Viz3  map calendar-->
+            <img src="pickschedule.png"  height="400" align = "right">
+            <div class='tableauPlaceholder' id='viz1665874963467' style='position: left'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='viz2_16658326696350&#47;Dashboard1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1665874963467');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 2300+440  ) { 
+                    // window.alert("1")
+                    vizElement.style.width='2300px';vizElement.style.height='1027px';
+                    } else if ( divElement.offsetWidth > 1027+440 ) { 
+                        // window.alert(divElement.offsetWidth)
+                        vizElement.style.width=concat(divElement.offsetWidth-440, 'px');
+                        vizElement.style.height='1027px';
+                        } else { 
+                            vizElement.style.width='100%';vizElement.style.height='827px';
+                            }                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
 
+        </div>
 
-
-</div>
+        <div class="footer">
+            <div class="w clearfix">
+                <div class="copyright">
+                    <img src="Melbournelogo.png"  height="100" align = "left">
+                    <br><br><br><br><br><br>
+                    <p>Welcome to Melbourne！<br>
+                    @ Team 64 Geom90007 Information Visualization 2022 Sm2</p>
+                    <a href="https://github.com/WeixianFu/Geom90007-2022sm2-team64">Github</a>
+                </div>
+                <div class = 'links'>
+                    <dl>
+                        <dt>Data Source</dt>
+                        <dd><a href="https://data.melbourne.vic.gov.au/Property/Live-Music-Venues/mgqj-necz">Live Music</a></dd>
+                        <dd><a href="https://data.melbourne.vic.gov.au/Transport/Bus-stops-for-Melbourne-Visitor-Shuttle/2x87-fe4u">Bus Stop</a></dd>
+                        <dd><a href="https://discover.data.vic.gov.au/dataset/melbourne-and-metropolitan-hotels-pubs-and-publicans">Melbourne Hotel</a></dd>
+                        <dd><a href="https://data.melbourne.vic.gov.au/People/Landmarks-and-places-of-interest-including-schools/j5vt-ppat">Place of Interests</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Tableau</dt>
+                        <dd><a href="https://public.tableau.com/app/profile/zikry3752/viz/review_3_16657602441030/Dashboard2">Where to Live</a></dd>
+                        <dd><a href="https://public.tableau.com/app/profile/zikry3752/viz/viz2_16658326696350/Dashboard1">Where to Go</a></dd>
+                        <dd><a href="https://public.tableau.com/app/profile/zikry3752/viz/Viz3_16658605202470/Dashboard1">When to Go</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
 
     </div>
 
