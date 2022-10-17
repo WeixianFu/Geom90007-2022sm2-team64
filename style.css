@@ -137,7 +137,6 @@ body {
 }
 
 .footer {
-  height: 415px;
   background-color: #666;
 }
 
@@ -156,7 +155,7 @@ body {
 
 .copyright p {
   font-size: 20px;
-  color: #fff;
+  color: #303133;
   margin: 20px 0 15px 0;
 }
 
@@ -167,7 +166,7 @@ body {
   border: 1px solid #fff;
   text-align: center;
   line-height: 33px;
-  color: #fff;
+  color: #303133;
   font-size: 16px;
 }
 
@@ -183,14 +182,30 @@ body {
 
 .links dl dt {
   font-size: 22px;
-  color: #fff;
+  color: #303133;
   margin-bottom: 5px;
 }
 
 .links dl dd a {
-  color: #fff;
+  color: #303133;
   font-size: 20px;
 }
+
+.wheretolive {
+  color:#407BFF;
+}
+
+.wheretogo {
+  color:#ff725e;
+}
+
+.whentogo {
+  color: #74cc8d;
+}
+
+.left{ position:relative; top: 200px; left:0; width:1600px; height:500px; background-color:#CCCCCC} ;
+.right{ position:relative; top:100px; right:10px; width:400px; height:1000px} ;
+
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
