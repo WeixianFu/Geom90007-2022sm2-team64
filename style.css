@@ -67,7 +67,8 @@ body {
 
 .page_footer_item {
   background-color:#00457C;
-  height: 120px;
+  height: 80px;
+  margin: 20px 0 3px 0;
 
 }
    /* Tab */
@@ -152,12 +153,13 @@ body {
 
 .copyright {
   float: center;
+  margin: 20px 0 3px 0;
 }
 
 .copyright p {
   font-size: 20px;
   color: #fff;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 3px 0;
 }
 
 .copyright .app {
@@ -172,12 +174,12 @@ body {
 }
 
 .links {
-  float: right;
-  margin-right: calc(40vw);
+  float: center;
   color:#fff;
+  margin-bottom: 20px;
 }
 
-.links dl {
+/* .links dl {
   float: left;
   margin-left: 100px;
 }
@@ -191,7 +193,7 @@ body {
 .links dl dd a {
   color: #fff;
   font-size: 20px;
-}
+} */
 
 .wheretolive {
   color:#407BFF;
