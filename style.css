@@ -60,26 +60,27 @@ body {
     order: 1;  
     background-color:#00457C; /*#00457C*/
     text-align: center;
-    /* padding: 15px; */
-    height: 80px;
-   
-   
+    /* padding: 15px;  */
+    height: 70px;
+    
   }
+
 
 .page_footer_item {
   background-color:#00457C;
   height: 70px;
   padding: 0;
-  margin: 0;
+  
 
 }
    /* Tab */
 
+
 /* Style the tab */
 .tab { 
   overflow: hidden;
-  padding-top: 24px;
-  /* border: 1px solid #ccc; */
+  padding-top: 0;
+   
  
 }
 
@@ -90,26 +91,32 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 24px 16px;
+  padding: 4px 0px;
   transition: 0.3s;
-  width: 110px;
+  width: 100px;
+  /* border: 2px solid #ddd;  */
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+   background-color: #ccc;/* #ddd */
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 /* Style the tab content */
-
-
 .tabcontent {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+  
+}
+
+.tbody {
+  margin: 0;
+  padding: 0;
 }
 
 .divider {
@@ -147,21 +154,19 @@ body {
 
 
 
-.footer .w {
-  /* margin-top: 35px; */
-  /* padding-top: 35px; */
- 
-}
-
 .copyright {
-  float: center;
-  margin: 10px 0 3px 0;
+  
+  margin: 20px 0 0 0;
 }
 
 .copyright p {
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   margin: 0;
+}
+
+.copyright a{
+  color:#EBDFC2;
 }
 
 
@@ -174,22 +179,10 @@ body {
   color:#fff;
   /* margin-bottom: 20px; */
 }
-
-/* .links dl {
-  float: left;
-  margin-left: 100px;
+.links p {
+  margin-top: 2px;
 }
 
-.links dl dt {
-  font-size: 22px;
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-.links dl dd a {
-  color: #fff;
-  font-size: 20px;
-} */
 
 .wheretolive {
   color:#407BFF;
