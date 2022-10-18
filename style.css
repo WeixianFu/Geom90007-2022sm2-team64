@@ -164,6 +164,9 @@ body {
 }
 
 
+.links a {
+  color:#EBDFC2;
+}
 
 .links {
   float: center;
