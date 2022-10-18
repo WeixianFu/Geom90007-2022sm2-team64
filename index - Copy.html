@@ -33,8 +33,10 @@
      <div id = "where to go" class = "tabcontent">
      <table>
         <tr>
-            <td colspan="2" width="1600"></td>
+            <td colspan="2" width="50%"></td>
+           
             <td rowspan="2">
+                <img src="choosehotel.png"  width="100" height="120" align = "center">
                 <div class="tab">
                     <!-- <button class="tablinks" onclick="openMap(event, 'where to live')" 
                     id = "defaultOpen">
@@ -47,9 +49,13 @@
                     <button class="tablinks" onclick="openMap(event, 'when to go')">
                         <img src="schedule.png" height = "40" /> 
                         When to go</button>
+
+                        
                 </div>
             </td>
         </tr>
+
+        
         <tr>
             <td rowspan="2">
                 <div class='tableauPlaceholder' id='viz1665874648275' style='position: left'>
@@ -75,16 +81,18 @@
                 <script type='text/javascript'>                    
                     var divElement = document.getElementById('viz1665874648275');                    
                     var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 1000+440 ) { 
-                        vizElement.style.width='800px';
-                        vizElement.style.height='800px';
-                        } else if ( divElement.offsetWidth > 827+440 ) {
-                            vizElement.style.width="800px";
-                            vizElement.style.height='800px';
-                            } else { 
-                                vizElement.style.width="800px";
-                                vizElement.style.height='800px';
-                                }                     
+                    // if ( divElement.offsetWidth > 1000+440 ) { 
+                    //     vizElement.style.width='800px';
+                    //     vizElement.style.height='800px';
+                    //     } else if ( divElement.offsetWidth > 827+440 ) {
+                    //         vizElement.style.width="800px";
+                    //         vizElement.style.height='800px';
+                    //         } else { 
+                    //             vizElement.style.width="800px";
+                    //             vizElement.style.height='800px';
+                    //             }         
+                                 vizElement.style.width="600px";
+                                vizElement.style.height='800px';            
                     var scriptElement = document.createElement('script');                    
                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
                     vizElement.parentNode.insertBefore(scriptElement, vizElement);                
@@ -125,7 +133,7 @@
                     //             vizElement.style.width='500px';
                     //             vizElement.style.height='800px';
                     //             }                     
-                    vizElement.style.width='600px';
+                    vizElement.style.width='700px';
                     vizElement.style.height='800px';
                     var scriptElement = document.createElement('script');                    
                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
@@ -134,15 +142,19 @@
             </td>
         </tr>
 
+       
+
         <tr>
             <td>
-                <img src="googlereview.png"  width="400" height="600" align = "center">
+               
                 <br>
+               
                 <p class="wheretogo" alig> choose XXXXXXXXXX</p>
 
             </td>
         </tr>
      </table>
+   
      </div>
 
         <div id = "when to go" class = "tabcontent">
@@ -150,6 +162,7 @@
                 <tr>
                     <td width = "1600"></td>
                     <td rowspan="2">
+                        <img src="pickschedule.png"  width="120"  height="180" align = "center">
                         <div class="tab">
                             <button class="tablinks" onclick="openMap(event, 'where to go')">
                                 <img src="map.png" height = "40" /> 
@@ -188,7 +201,7 @@
                         <script type='text/javascript'>                    
                             var divElement = document.getElementById('viz1665874963467');                    
                             var vizElement = divElement.getElementsByTagName('object')[0];      
-                            vizElement.style.width = "1400px";
+                            vizElement.style.width = "1300px";
                             vizElement.style.height = "800px";              
                             // if ( divElement.offsetWidth > 2300+440  ) { 
                             //     // window.alert("1")
@@ -209,7 +222,7 @@
                 <tr>
                     <td>
                         <!-- Viz3  map calendar-->
-                        <img src="pickschedule.png"  width="400"  height="600" align = "center">
+                     
                         <br>
                         <p class="whentogo"> choose XXXXXXXXXX</p>
                     </td>
