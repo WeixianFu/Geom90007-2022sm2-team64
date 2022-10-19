@@ -25,8 +25,8 @@
 
 body {
   margin: 0;
-    height: 100%;
-    width: 100%;
+  max-width: 100%; 
+
     overscroll-behavior: none;
   }
   
@@ -54,14 +54,19 @@ body {
     color: #fff;
   }
 
+  .td {
+    padding: 0;
+  }
+
   /* Containers */
 .page_header_item {
-    /*flex: 1;*/
+    /* flex: 1; */
     order: 1;  
     background-color:#00457C; /*#00457C*/
     text-align: center;
     /* padding: 15px;  */
     height: 70px;
+    width: 100%;
     
   }
 
@@ -70,18 +75,31 @@ body {
   background-color:#00457C;
   height: 70px;
   padding: 0;
+  width: 100%;
   
 
 }
    /* Tab */
 
-
+table {
+  border-spacing: 0;
+}
 /* Style the tab */
 .tab { 
   overflow: hidden;
   padding-top: 0;
-   
  
+}
+.tab td {
+  width: 125px;
+ 
+}
+td {
+  padding: 0;
+}
+button {
+  border-width: 0;
+  background-color: #fff;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -105,7 +123,10 @@ body {
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #fff;
+  border: 0;
 }
+
+
 
 /* Style the tab content */
 .tabcontent {
@@ -138,7 +159,7 @@ body {
   margin-left: calc(5vw);
   width: calc(50vw);
   height: calc(50vh);
-  border: 2px solid rgb(12, 12, 15);
+  /* border: 2px solid rgb(12, 12, 15); */
 }
 
 .div2 {
@@ -149,7 +170,7 @@ body {
   margin-left: calc(5vw);
   width: 2000px;
   height: 1000px;
-  border: 2px solid rgb(12, 12, 15);
+  /* border: 2px solid rgb(12, 12, 15); */
 }
 
 
@@ -189,11 +210,15 @@ body {
 }
 
 .wheretogo {
-  color:#ff725e;
+  color: rgb(175, 172, 172); /*#ff725e; */
+  word-spacing: 5px;
+  
 }
 
-.whentogo {
-  color: #74cc8d;
+.whentogo{
+  color: rgb(175, 172, 172); /* #74cc8d;*/
+  word-spacing: 5px;
+ 
 }
 
 .left{ position:relative; top: 200px; left:0; width:1600px; height:500px; background-color:#CCCCCC} ;
