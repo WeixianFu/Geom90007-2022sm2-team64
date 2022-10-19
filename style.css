@@ -26,7 +26,6 @@
 body {
   margin: 0;
   max-width: 100%; 
-
     overscroll-behavior: none;
   }
   
@@ -125,6 +124,8 @@ button {
   background-color: #fff;
   border: 0;
 }
+
+
 
 
 
