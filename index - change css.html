@@ -13,7 +13,7 @@
 </head>
 
 <body onload="document.getElementById('defaultOpen').click();">
-   
+
     <!--######### header ################-->
     <div class="page_header_item">
         <div>
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-   
+
     <!--######### create tab button ################-->
     <div class="tab">
         <button class="tablinks defaultOpen" onclick="openMap(event, 'where to go')" id="defaultOpen">
@@ -40,56 +40,56 @@
 
     <!-- Page 1 ############# Where to go page ###########-->
     <div id="where to go" class="tabcontent page1">
-        <div class="graph1"> 
+        <div class="graph1">
 
-        <!-- #### Graph 1 map radius #### -->
-        <div class='tableauPlaceholder' id='viz1665874648275' style='position: left'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Dashboard 2 '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='path' value='shared&#47;RDHC6XH6P' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-            </object>
+            <!-- #### Graph 1 map radius #### -->
+            <div class='tableauPlaceholder' id='viz1665874648275' style='position: left'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Dashboard 2 '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared&#47;RDHC6XH6P' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1665874648275');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                // if ( divElement.offsetWidth > 1000+440 ) { 
+                //     vizElement.style.width='800px';
+                //     vizElement.style.height='800px';
+                //     } else if ( divElement.offsetWidth > 827+440 ) {
+                //         vizElement.style.width="800px";
+                //         vizElement.style.height='800px';
+                //         } else { 
+                //             vizElement.style.width="800px";
+                //             vizElement.style.height='800px';
+                //             }         
+                vizElement.style.width = "100%";
+                vizElement.style.height = '800px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+
         </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1665874648275');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            // if ( divElement.offsetWidth > 1000+440 ) { 
-            //     vizElement.style.width='800px';
-            //     vizElement.style.height='800px';
-            //     } else if ( divElement.offsetWidth > 827+440 ) {
-            //         vizElement.style.width="800px";
-            //         vizElement.style.height='800px';
-            //         } else { 
-            //             vizElement.style.width="800px";
-            //             vizElement.style.height='800px';
-            //             }         
-            vizElement.style.width = "100%";
-            vizElement.style.height = '800px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
 
-</div>
-
-<div class="graph2">
-        <!-- ##### Graph 2 Spin bar chart ####-->
+        <div class="graph2">
+            <!-- ##### Graph 2 Spin bar chart ####-->
             <div class='tableauPlaceholder' id='viz1666147094544' style='position: relative'><noscript><a href='#'><img
                             alt='Dashboard 1 '
                             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;Viz5_16660547923550&#47;Dashboard1&#47;1_rss.png'
@@ -123,121 +123,116 @@
                 var scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                </script>
-
-</div>
-
-            <!-- Page 1 image + text -->
-
-            <div class="imageandtext">
-
-
-                <img src="choosehotel.png" width="125" height="130" align="center">
-                <p class="wheretogo" align="left"> Choose hotel to live and decide where to visit in Melbourne.</p>
-
-
-            </div>
+            </script>
 
         </div>
-   
+
+        <!-- Page 1 image + text -->
+
+        <div class="imageandtext">
+
+
+            <img src="choosehotel.png" width="125" height="130" align="center">
+            <p class="wheretogo" align="left"> Choose hotel to live and decide where to visit in Melbourne.</p>
+
+
+        </div>
+
+    </div>
 
 
 
-            <!-- Page 2 ############# Where to go page ###########-->
-            <div id="when to go" class="tabcontent page2">
-            
-                <div class="graph3">
-                <!-- #### Graph 3 Calendar #### -->
-                <div class='tableauPlaceholder' id='viz1666171349998' style='position: relative'><noscript><a
-                            href='#'><img alt='Dashboard 1 '
-                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1_rss.png'
-                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                        <param name='embed_code_version' value='3' />
-                        <param name='site_root' value='' />
-                        <param name='name' value='viz2_16658326696350&#47;Dashboard1' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image'
-                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;vi&#47;viz2_16658326696350&#47;Dashboard1&#47;1.png' />
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en-US' />
-                    </object></div>
-                <script
-                    type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1666171349998'); 
-                    var vizElement = divElement.getElementsByTagName('object')[0]; 
-                    // if (divElement.offsetWidth > 800) { vizElement.style.width = '1500px'; 
-                    // vizElement.style.height = '1027px'; } 
-                    // else if (divElement.offsetWidth > 500) { vizElement.style.width = '1500px'; vizElement.style.height = '1027px'; } 
-                    // else { vizElement.style.width = '100%'; vizElement.style.height = '827px'; } 
-                    vizElement.style.width = '100%'; 
-                    vizElement.style.height = '800px';
-                   
-                   
-                    var scriptElement = document.createElement('script'); 
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);      
-                    
-                    
-                    </script>
 
-                </div>
+    <!-- Page 2 ############# Where to go page ###########-->
+    <div id="when to go" class="tabcontent page2">
 
-                <!-- Page 2 image + text -->
-                <div class="imageandtext">
-                    <img src="pickschedule.png" width="100" height="150" align="center">
-                    <p class="whentogo"> Find out the best day to visit the recommended places and avoid crowding.</p>
-                </div>
+        <div class="graph3">
+            <!-- #### Graph 3 Calendar #### -->
 
-            </div>
-        
-       
-                <!--######### footer ################-->
-                <div class="page_footer_item">
-                    <div class="w clearfix">
-                        <div class="copyright" align="center">
-                            <p> @Group64 Geom90007 Information Visualization 2022 Sm2
-                                <a href="https://github.com/WeixianFu/Geom90007-2022sm2-team64">Github</a>
-                            </p>
+            <div class='tableauPlaceholder' id='viz1666242695742' style='position: relative'><noscript><a href='#'><img
+                            alt='Dashboard 1 '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YD&#47;YDJR9ZJK8&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared&#47;YDJR9ZJK8' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YD&#47;YDJR9ZJK8&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object></div>
+            <script
+                type='text/javascript'>                    
+                var divElement = document.getElementById('viz1666242695742'); 
+                var vizElement = divElement.getElementsByTagName('object')[0]; 
+                // if (divElement.offsetWidth > 800) { vizElement.style.width = '1500px'; 
+                // vizElement.style.height = '2027px'; }
+                //  else if (divElement.offsetWidth > 500) 
+                //  { vizElement.style.width = '1500px'; vizElement.style.height = '2027px'; } 
+                //  else { vizElement.style.width = '100%'; vizElement.style.height = '1477px'; } 
+                vizElement.style.width = '100%'; 
+                vizElement.style.height = '1477px';
+                 
+                 
+                 var scriptElement = document.createElement('script'); 
+                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                 vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-                        </div>
 
-                        <div class='links' , align="center">
-                            <p>Data Source:&nbsp;&nbsp;
-                                <a href="https://data.melbourne.vic.gov.au/Property/Live-Music-Venues/mgqj-necz">Live
-                                    Music</a>
-                                <a
-                                    href="https://data.melbourne.vic.gov.au/Transport/Bus-stops-for-Melbourne-Visitor-Shuttle/2x87-fe4u">Bus
-                                    Stop</a> &nbsp;
-                                <a
-                                    href="https://discover.data.vic.gov.au/dataset/melbourne-and-metropolitan-hotels-pubs-and-publicans">Melbourne
-                                    Hotel</a> &nbsp;
-                                <a
-                                    href="https://data.melbourne.vic.gov.au/People/Landmarks-and-places-of-interest-including-schools/j5vt-ppat">Place
-                                    of Interests</a> &nbsp;
+        </div>
 
-                                Tableau:&nbsp;&nbsp;
-                                <a
-                                    href="https://public.tableau.com/app/profile/zikry3752/viz/review_3_16657602441030/Dashboard2">Where
-                                    to Live</a> &nbsp;
-                                <a
-                                    href="https://public.tableau.com/app/profile/zikry3752/viz/viz2_16658326696350/Dashboard1">Where
-                                    to Go</a> &nbsp;
-                                <a
-                                    href="https://public.tableau.com/app/profile/zikry3752/viz/Viz3_16658605202470/Dashboard1">When
-                                    to Go</a> &nbsp;
-                            </p>
+        <!-- Page 2 image + text -->
+        <div class="imageandtext">
+            <img src="pickschedule.png" width="100" height="150" align="center">
+            <p class="whentogo"> Find out the best day to visit the recommended places and avoid crowding.</p>
+        </div>
 
-                        </div>
-                    </div>
-                </div>
+    </div>
+
+
+    <!--######### footer ################-->
+    <div class="page_footer_item">
+        <div class="w clearfix">
+            <div class="copyright" align="center">
+                <p> @Group64 Geom90007 Information Visualization 2022 Sm2
+                    <a href="https://github.com/WeixianFu/Geom90007-2022sm2-team64">Github</a>
+                </p>
 
             </div>
+
+            <div class='links' , align="center">
+                <p>Data Source:&nbsp;&nbsp;
+                    <a href="https://data.melbourne.vic.gov.au/Property/Live-Music-Venues/mgqj-necz">Live
+                        Music</a>
+                    <a
+                        href="https://data.melbourne.vic.gov.au/Transport/Bus-stops-for-Melbourne-Visitor-Shuttle/2x87-fe4u">Bus
+                        Stop</a> &nbsp;
+                    <a
+                        href="https://discover.data.vic.gov.au/dataset/melbourne-and-metropolitan-hotels-pubs-and-publicans">Melbourne
+                        Hotel</a> &nbsp;
+                    <a
+                        href="https://data.melbourne.vic.gov.au/People/Landmarks-and-places-of-interest-including-schools/j5vt-ppat">Place
+                        of Interests</a> &nbsp;
+
+                    Tableau:&nbsp;&nbsp;
+                    <a href="https://public.tableau.com/app/profile/zikry3752/viz/review_3_16657602441030/Dashboard2">Where
+                        to Live</a> &nbsp;
+                    <a href="https://public.tableau.com/app/profile/zikry3752/viz/viz2_16658326696350/Dashboard1">Where
+                        to Go</a> &nbsp;
+                    <a href="https://public.tableau.com/app/profile/zikry3752/viz/Viz3_16658605202470/Dashboard1">When
+                        to Go</a> &nbsp;
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
 
 
 </body>
