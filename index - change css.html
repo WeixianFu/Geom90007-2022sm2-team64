@@ -41,122 +41,36 @@
                     <p onclick="openMap(event, 'when to go')">Pick a day</p>
                 </div>
             </button>
-           
-    
         </div>
-
-
-        
-       
     </div>
 
 
     <!--######### create tab button ################-->
     
-
-
     <!-- Page 1 ############# Where to go page ###########-->
     <div id="where to go" class="tabcontent page1">
         <div class="graph1">
 
             <!-- #### Graph 1 map radius #### -->
-            <!-- <div class='tableauPlaceholder' id='viz1665874648275' style='position: left'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Dashboard 2 '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1_rss.png'
-                            style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='path' value='shared&#47;RDHC6XH6P' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RDHC6XH6P&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1665874648275');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                // if ( divElement.offsetWidth > 1000+440 ) { 
-                //     vizElement.style.width='800px';
-                //     vizElement.style.height='800px';
-                //     } else if ( divElement.offsetWidth > 827+440 ) {
-                //         vizElement.style.width="800px";
-                //         vizElement.style.height='800px';
-                //         } else { 
-                //             vizElement.style.width="800px";
-                //             vizElement.style.height='800px';
-                //             }         
-                vizElement.style.width = "100%";
-                vizElement.style.height = '800px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-            </script> -->
-
                 <tableau-viz
                   id="tableauViz"
                   src="https://public.tableau.com/views/review_3_16657602441030/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link"
                   device="desktop"
                   toolbar="hidden"
                 >
-                  <viz-filter field="Region" value="Central" />
+                  <!-- <viz-filter field="Region" value="Central" /> -->
                 </tableau-viz>   
 
         </div>
 
         <div class="graph2">
             <!-- ##### Graph 2 Spin bar chart ####-->
-            <!-- <div class='tableauPlaceholder' id='viz1666147094544' style='position: relative'><noscript><a href='#'><img
-                            alt='Dashboard 1 '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;Viz5_16660547923550&#47;Dashboard1&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='Viz5_16660547923550&#47;Dashboard1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Vi&#47;Viz5_16660547923550&#47;Dashboard1&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object></div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1666147094544');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                // if (divElement.offsetWidth > 800) { vizElement.style.width = '700px'; 
-                // vizElement.style.height = '827px'; } 
-                // else if (divElement.offsetWidth > 500) { vizElement.style.width = '700px'; 
-                // vizElement.style.height = '827px'; } 
-                // else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } 
-                vizElement.style.width = '100%';
-                vizElement.style.height = '800px';
-
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-            </script> -->
                 <tableau-viz
                   id="tableauViz"
                   src="https://public.tableau.com/views/spiralbarcharttest/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link"
                   device="desktop"
-                  toolbar="bottom"
+                  toolbar="hidden"
                 >
-                  <viz-filter field="Region" value="Central" />
                 </tableau-viz>
 
         </div>
@@ -183,52 +97,16 @@
         <div class="graph3">
             <!-- #### Graph 3 Calendar #### -->
 
-            <!-- <div class='tableauPlaceholder' id='viz1666242695742' style='position: relative'><noscript><a href='#'><img
-                            alt='Dashboard 1 '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YD&#47;YDJR9ZJK8&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='path' value='shared&#47;YDJR9ZJK8' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YD&#47;YDJR9ZJK8&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object></div>
-            <script
-                type='text/javascript'>                    
-                var divElement = document.getElementById('viz1666242695742'); 
-                var vizElement = divElement.getElementsByTagName('object')[0]; 
-                // if (divElement.offsetWidth > 800) { vizElement.style.width = '1500px'; 
-                // vizElement.style.height = '2027px'; }
-                //  else if (divElement.offsetWidth > 500) 
-                //  { vizElement.style.width = '1500px'; vizElement.style.height = '2027px'; } 
-                //  else { vizElement.style.width = '100%'; vizElement.style.height = '1477px'; } 
-                vizElement.style.width = '100%'; 
-                vizElement.style.height = '1477px';
-                 
-                 
-                 var scriptElement = document.createElement('script'); 
-                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-                 vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+        
                  <!-- <div id="app"> -->
                     <tableau-viz
                       id="tableauViz"
                       src="https://public.tableau.com/views/websitecalender/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
                       device="desktop"
-                      height = 
                       toolbar = "hidden"
                     >
-                      <viz-filter field="Region" value="Central" />
                     </tableau-viz>
                   <!-- </div>   -->
-
-
         </div>
 
         <!-- Page 2 image + text -->
