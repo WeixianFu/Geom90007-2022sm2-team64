@@ -20,26 +20,39 @@
 
     <!--######### header ################-->
     <div class="page_header_item">
-        <div>
-            <img src="UniMelbLogo.png" alt="UniMelbLogo" height="70" align="left">
-            <img src="Melbournelogo.png" alt="UniMelbLogo" height="70" align="right">
-        </div>
-        <div style="display: inline-block; vertical-align: middle;">
+        <div class="headerimage">
+            <img src="Melbournelogo.png" alt="UniMelbLogo" height="40" align="left">
+            <img src="UniMelbLogo.png" alt="UniMelbLogo" height="40" align="right">
             <h4>Melbourne Travel Planner</h4>
+           
+           
         </div>
+        <div class="tab" >
+            <button class="tablinks defaultOpen" onclick="openMap(event, 'where to go')" id="defaultOpen" >
+                <img src="map.png" height="20" /> Where to go</button>
+    
+            
+                <button class="tablinks dropdown" >
+            <!-- <button class="tablinks dropdown" onclick="openMap(event, 'when to go')" > -->
+                <img src="schedule.png" height="20" />
+                When to go
+                <div class="DropdownButtons"> <!-- Dropdown navigation -->
+                    <p >Pick a month</p>
+                    <p onclick="openMap(event, 'when to go')">Pick a day</p>
+                </div>
+            </button>
+           
+    
+        </div>
+
+
+        
+       
     </div>
 
 
     <!--######### create tab button ################-->
-    <div class="tab">
-        <button class="tablinks defaultOpen" onclick="openMap(event, 'where to go')" id="defaultOpen">
-            <img src="map.png" height="70" /> Where to go</button>
-
-        <button class="tablinks" onclick="openMap(event, 'when to go')">
-            <img src="schedule.png" height="70" />
-            When to go</button>
-
-    </div>
+    
 
 
     <!-- Page 1 ############# Where to go page ###########-->
@@ -150,14 +163,14 @@
 
         <!-- Page 1 image + text -->
 
-        <div class="imageandtext">
+        <!-- <div class="imageandtext">
 
 
             <img src="choosehotel.png" width="125" height="130" align="center">
             <p class="wheretogo" align="left"> Choose hotel to live and decide where to visit in Melbourne.</p>
 
 
-        </div>
+        </div> -->
 
     </div>
 
@@ -219,10 +232,10 @@
         </div>
 
         <!-- Page 2 image + text -->
-        <div class="imageandtext">
+        <!-- <div class="imageandtext">
             <img src="pickschedule.png" width="100" height="150" align="center">
             <p class="whentogo"> Find out the best day to visit the recommended places and avoid crowding.</p>
-        </div>
+        </div> -->
 
     </div>
 

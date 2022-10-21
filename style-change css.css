@@ -28,16 +28,23 @@ body {
   max-width: 100%; 
     overscroll-behavior: none;
   }
-  
+
+
+.headerimage {
+  padding-top: 3px;
+}
+
   h4 {
     font-family: 'Raleway', sans-serif;
     display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0 !important;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 1.2em;
+    height: 10px;
     color: #fff;
+    text-align: center;
+    /* margin-left: 60px; */
+   
+    margin-top: 15px;
+  
     
   }
   
@@ -55,26 +62,28 @@ body {
 
 
   /* ############## header and footer####### */
+
+
 .page_header_item {
     /* flex: 1; */
     order: 1;  
     background-color:#00457C; /*#00457C*/
     text-align: center;
     /* padding: 15px;  */
-    height: 70px;
+    height: 80px;
     width: 100%;
     top:0;
     
   }
 
   .page1 {
-    top: 70px;
-    height: 800px;
+    top: 80px;
+    height: 45vw;
     bottom: 70px;
   }
   .page2 {
-    top: 70px;
-    height: 1477px;
+    top: 80px;
+    height: 90vw;
     bottom: 70px;
   }
 
@@ -92,18 +101,19 @@ body {
 
 /* #########  button tab ########## */
 .tab{ 
-  
-  float: right;
-  width: 10%;
-  padding-top: 0;
-  height: 500px;
-  text-align: center;
-  
+ 
+  /* float: left; */
+  width: 280px;
+  padding-top: 0px;
+  margin-top: 0;
+  height: 40px;
+
   
 }
 
 button {
-  border-width: 0;
+   border-radius: 5px 5px 0 0; 
+   /* border-radius: 5px; */
   background-color: #fff;
   color: rgb(175, 172, 172);
 }
@@ -111,14 +121,17 @@ button {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: center;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 4px 0px;
+  padding: 3px 0;
+  margin-left: auto;
+  margin-right: auto;
   transition: 0.3s;
-  width: 100px;
+  width: 120px;
   font-weight: 900;
+  
+  
  
   /* border: 2px solid #ddd;  */
 }
@@ -133,12 +146,63 @@ button {
   background-color: #fff;
   border: 0;
 }
+.defaultOpen {
+  background-color: #fff;
+}
+
+/* ######### dropdown menu ###########*/
+.dropdown:hover .DropdownButtons {
+  display: block;
+}
+
+.DropdownButtons {
+  display: none;
+  z-index: 2000;
+  top: 80px;   
+  /* 80px */
+  border-radius: 5px;
+  text-align: center;
+  width: 120px;
+  margin: 0px;
+  padding: .2% 0% .2% 0%;
+  transition: 0.3s;
+  position: fixed;
+  background-color:#fff;
+
+}
+.DropdownButtons p:hover {
+  background-color: #00447ca3;/* #ddd */
+}
+
+.DropdownButtons p {
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+
+  
+  line-height:25px;
+
+  height: 25px;
+  color: rgb(175, 172, 172);
+  text-decoration: none;
+  
+  margin: .6% .5% .6% .5%;
+  padding: 1px;
+  transition: 0.3s;
+}
+
+
+
+
+
 
 /* ###### page 1 ######## */
 
 
 .page1 div.graph1{
-  width: 35%;
+  width: 45%;
   height: 45vw;
   float: left;
 }
@@ -153,7 +217,7 @@ button {
 /* ###### page 2 ######## */
 
 .page2 div.graph3 {
-  width: 90%;
+  width: 100%;
   height: 90vw;
   float: left;
 }

@@ -22,3 +22,5 @@ function openMap(event, buttonName) {
     event.currentTarget.className += " active";
 
 }
+
+
