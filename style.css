@@ -28,16 +28,23 @@ body {
   max-width: 100%; 
     overscroll-behavior: none;
   }
-  
+
+
+.headerimage {
+  padding-top: 3px;
+}
+
   h4 {
     font-family: 'Raleway', sans-serif;
     display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0 !important;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 1.2em;
+    height: 10px;
     color: #fff;
+    text-align: center;
+    /* margin-left: 60px; */
+   
+    margin-top: 15px;
+  
     
   }
   
@@ -53,64 +60,79 @@ body {
     color: #fff;
   }
 
-  .td {
-    padding: 0;
-  }
 
-  /* Containers */
+  /* ############## header and footer####### */
+
+
 .page_header_item {
     /* flex: 1; */
     order: 1;  
     background-color:#00457C; /*#00457C*/
     text-align: center;
     /* padding: 15px;  */
-    height: 70px;
+    height: 80px;
     width: 100%;
+    top:0;
     
   }
 
+  .page1 {
+    top: 80px;
+    height: 45vw;
+    bottom: 70px;
+  }
+  .page2 {
+    top: 80px;
+    height: 90vw;
+    bottom: 70px;
+  }
 
 .page_footer_item {
   background-color:#00457C;
   height: 70px;
   padding: 0;
   width: 100%;
+  bottom:0;
   
 
 }
-   /* Tab */
+  
 
-table {
-  border-spacing: 0;
-}
-/* Style the tab */
-.tab { 
-  overflow: hidden;
-  padding-top: 0;
+
+/* #########  button tab ########## */
+.tab{ 
  
+  /* float: left; */
+  width: 280px;
+  padding-top: 0px;
+  margin-top: 0;
+  height: 40px;
+
+  
 }
-.tab td {
-  width: 125px;
- 
-}
-td {
-  padding: 0;
-}
+
 button {
-  border-width: 0;
+   border-radius: 5px 5px 0 0; 
+   /* border-radius: 5px; */
   background-color: #fff;
+  color: rgb(175, 172, 172);
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: center;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 4px 0px;
+  padding: 3px 0;
+  margin-left: auto;
+  margin-right: auto;
   transition: 0.3s;
-  width: 100px;
+  width: 120px;
+  font-weight: 900;
+  
+  
+ 
   /* border: 2px solid #ddd;  */
 }
 
@@ -124,60 +146,97 @@ button {
   background-color: #fff;
   border: 0;
 }
+.defaultOpen {
+  background-color: #fff;
+}
 
+/* ######### dropdown menu ###########*/
+.dropdown:hover .DropdownButtons {
+  display: block;
+}
 
+.DropdownButtons {
+  display: none;
+  z-index: 2000;
+  top: 80px;   
+  /* 80px */
+  border-radius: 5px;
+  text-align: center;
+  width: 120px;
+  margin: 0px;
+  padding: .2% 0% .2% 0%;
+  transition: 0.3s;
+  position: fixed;
+  background-color:#fff;
 
+}
+.DropdownButtons p:hover {
+  background-color: #00447ca3;/* #ddd */
+}
 
+.DropdownButtons p {
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
 
-/* Style the tab content */
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
 
   
+  line-height:25px;
+
+  height: 25px;
+  color: rgb(175, 172, 172);
+  text-decoration: none;
+  
+  margin: .6% .5% .6% .5%;
+  padding: 1px;
+  transition: 0.3s;
 }
 
-.tbody {
-  margin: 0;
-  padding: 0;
+
+
+
+
+
+/* ###### page 1 ######## */
+
+
+.page1 div.graph1{
+  width: calc(100vw - 770px);
+  height: 827px;
+  float: left;
 }
 
-.divider {
+.page1 div.graph2 {
+  width: 750px;
+  height: 850px;
+  float: right;
+}
+
+
+/* ###### page 2 ######## */
+
+.page2 div.graph3 {
   width: 100%;
-  height:1px;
-  position: relative;
-  background-color: #fa83345c;
-}
-.divider-text{
-  position: absolute;
-  background-color: #FFF;
-  padding: 0 20px;
-  color:#fff;
-  left: 20px;
-  transform: translateY(-50%);
-}
-
-.div1 {
-  margin-left: calc(5vw);
-  width: calc(50vw);
-  height: calc(50vh);
-  /* border: 2px solid rgb(12, 12, 15); */
-}
-
-.div2 {
-  margin-right: 10px;
-}
-
-.div3 {
-  margin-left: calc(5vw);
-  width: 2000px;
-  height: 1000px;
-  /* border: 2px solid rgb(12, 12, 15); */
+  height: 90vw;
+  float: left;
 }
 
 
+
+/* ###### image and text ######## */
+.imageandtext {
+  width: 10%;
+  float: right;
+  text-align: center;
+ 
+  
+
+}
+
+/* ###### footer ######## */
 
 .copyright {
-  
   margin: 20px 0 0 0;
 }
 
