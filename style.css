@@ -37,8 +37,8 @@ body {
   h4 {
     font-family: 'Raleway', sans-serif;
     display: block;
-    font-size: 1.2em;
-    height: 10px;
+    font-size: 1.4em;
+    height: 4px;
     color: #fff;
     text-align: center;
     /* margin-left: 60px; */
@@ -93,8 +93,7 @@ body {
   padding: 0;
   width: 100%;
   bottom:0;
-  
-
+  margin-top: 5vh;
 }
   
 
@@ -202,14 +201,14 @@ button {
 
 
 .page1 div.graph1{
-  width: calc(100vw - 770px);
+  width: calc(100vw - 720px);
   height: 827px;
   float: left;
 }
 
 .page1 div.graph2 {
-  width: 750px;
-  height: 850px;
+  width: 700px;
+  height: 827px;
   float: right;
 }
 
@@ -223,16 +222,6 @@ button {
 }
 
 
-
-/* ###### image and text ######## */
-.imageandtext {
-  width: 10%;
-  float: right;
-  text-align: center;
- 
-  
-
-}
 
 /* ###### footer ######## */
 
