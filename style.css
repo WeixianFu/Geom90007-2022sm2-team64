@@ -78,17 +78,17 @@ body {
 
   .page1 {
     top: 80px;
-    /* height: 827px; */
+    height: 100vh;
     bottom: 70px;
   }
   .page2 {
     top: 80px;
-    /* height: 100vh; */
+    height: 100vh;
     bottom: 70px;
   }
   .page3 {
     top: 80px;
-    /* height: 100vh; */
+    height: 100vh;
     bottom: 70px;
   }
 
