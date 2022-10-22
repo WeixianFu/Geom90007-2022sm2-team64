@@ -78,12 +78,17 @@ body {
 
   .page1 {
     top: 80px;
-    height: 45vw;
+    /* height: 827px; */
     bottom: 70px;
   }
   .page2 {
     top: 80px;
-    height: 90vw;
+    /* height: 100vh; */
+    bottom: 70px;
+  }
+  .page3 {
+    top: 80px;
+    /* height: 100vh; */
     bottom: 70px;
   }
 
@@ -93,7 +98,7 @@ body {
   padding: 0;
   width: 100%;
   bottom:0;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
   
 
