@@ -32,22 +32,24 @@ body {
 
 .headerimage {
   padding-top: 3px;
-  float: center;
+}
+.headerimage p {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 2px;
+  margin-top: 0;
+ 
 }
 
   h4 {
     font-family: 'Raleway', sans-serif;
     display: block;
-    font-size: 1.4em;
-    height: 4px;
+    font-size: 20px;
+    height: 2px;
     color: #fff;
     text-align: center;
     /* margin-left: 60px; */
    
-    margin-top: 15px;
+    margin-top: 0px;
   
     
   }
@@ -74,25 +76,25 @@ body {
     background-color:#00457C; /*#00457C*/
     text-align: center;
     /* padding: 15px;  */
-    height: 100px;
+    height: 80px;
     width: 100%;
     top:0;
     
   }
 
   .page1 {
-    top: 100px;
-    height: 100vh;
+    top: 80px;
+    /* height: 827px; */
     bottom: 70px;
   }
   .page2 {
-    top: 100px;
-    height: 100vh;
+    top: 80px;
+    /* height: 100vh; */
     bottom: 70px;
   }
   .page3 {
-    top: 100px;
-    height: 100vh;
+    top: 80px;
+    /* height: 100vh; */
     bottom: 70px;
   }
 
@@ -166,7 +168,7 @@ button {
 .DropdownButtons {
   display: none;
   z-index: 2000;
-  top: 100px;   
+  top: 80px;   
   /* 80px */
   border-radius: 5px;
   text-align: center;
