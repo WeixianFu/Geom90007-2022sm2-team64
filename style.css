@@ -32,6 +32,10 @@ body {
 
 .headerimage {
   padding-top: 3px;
+  float: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 2px;
 }
 
   h4 {
@@ -70,24 +74,24 @@ body {
     background-color:#00457C; /*#00457C*/
     text-align: center;
     /* padding: 15px;  */
-    height: 80px;
+    height: 100px;
     width: 100%;
     top:0;
     
   }
 
   .page1 {
-    top: 80px;
+    top: 100px;
     height: 100vh;
     bottom: 70px;
   }
   .page2 {
-    top: 80px;
+    top: 100px;
     height: 100vh;
     bottom: 70px;
   }
   .page3 {
-    top: 80px;
+    top: 100px;
     height: 100vh;
     bottom: 70px;
   }
@@ -162,7 +166,7 @@ button {
 .DropdownButtons {
   display: none;
   z-index: 2000;
-  top: 80px;   
+  top: 100px;   
   /* 80px */
   border-radius: 5px;
   text-align: center;
