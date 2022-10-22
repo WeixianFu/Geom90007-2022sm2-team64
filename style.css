@@ -36,14 +36,14 @@ body {
 .headerimage p {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 0;
+  margin-top: 2px;
  
 }
 
   h4 {
     font-family: 'Raleway', sans-serif;
     display: block;
-    font-size: 20px;
+    font-size: 1.4em;
     height: 2px;
     color: #fff;
     text-align: center;
@@ -84,17 +84,17 @@ body {
 
   .page1 {
     top: 80px;
-    /* height: 827px; */
+    height: 827px;
     bottom: 70px;
   }
   .page2 {
     top: 80px;
-    /* height: 100vh; */
+    height: 100vh;
     bottom: 70px;
   }
   .page3 {
     top: 80px;
-    /* height: 100vh; */
+    height: 100vh;
     bottom: 70px;
   }
 
